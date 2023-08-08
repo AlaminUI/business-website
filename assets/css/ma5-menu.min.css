@@ -25,7 +25,7 @@
     transition: transform 0.3s ease-out 0s, -webkit-transform 0.3s ease-out 0s
 }
 
-/* @media (min-width: 768px) {
+/* @media (min-width: 1199px) {
     .ma5menu--active .ma5menu__page {
         -webkit-transform:translate3d(100%, 0, 0);
         transform: translate3d(100%, 0, 0)
@@ -137,9 +137,9 @@
     background-color: #0e65b6;
     -ms-touch-action: manipulation;
     touch-action: manipulation;
-    width: 55px;
+    width: 30px;
     height: 38px;
-    position: relative;
+    /* position: relative; */
     display: inline-block;
     text-align: center;
     white-space: nowrap;
@@ -150,17 +150,18 @@
     user-select: none;
     border: none;
     font-weight: 400;
-    padding: 8px 12px;
+    padding: 8px 0px;
     border-radius: 4px;
     -o-transition: box-shadow .15s ease-in-out;
     transition: box-shadow .15s ease-in-out;
-    position: fixed;
-    right: 8px;
-    top: 10px;
+    position: absolute;
+    right: 0;
+    top: 50%;
     z-index: 999;
     background: transparent;
     color: #0089cf;
     font-size: 24px;
+    transform: translateY(-50%);
 }
 
 .ma5menu__toggle:hover {
@@ -183,7 +184,8 @@
 }
 
 .ma5menu--left .ma5menu__header .ma5menu__toggle {
-    right: 0
+    right: 0;
+    top: 22px;
 }
 
 .ma5menu--right .ma5menu__header .ma5menu__toggle {
@@ -243,7 +245,7 @@
     pointer-events: none
 }
 
-/* @media (min-width: 768px) {
+/* @media (min-width: 1199px) {
     .ma5menu__alert {
         width:100%
     }
@@ -300,13 +302,13 @@
     box-shadow: 0 0 12px rgba(0,0,0,0.14);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
     .ma5menu__container {
-        width:100%
+        width:100%;
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1199px) {
     .ma5menu__container {
         width:100%
     }
@@ -345,7 +347,7 @@
     animation-name: ma5menuOutIEphone
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1199px) {
     .ie.ma5menu--ready.ma5menu--left .ma5menu__container {
         -webkit-animation-name:ma5menuOutIEtablet;
         animation-name: ma5menuOutIEtablet
@@ -373,7 +375,7 @@
     animation-name: ma5menuOutBIEphone
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1199px) {
     .ie.ma5menu--ready.ma5menu--right .ma5menu__container {
         -webkit-animation-name:ma5menuOutBIEtablet;
         animation-name: ma5menuOutBIEtablet
@@ -401,7 +403,7 @@
     animation-name: ma5menuOutBIEphone
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1199px) {
     .ie.ma5menu--active.ma5menu--left .ma5menu__container {
         -webkit-animation-name:ma5menuOutBIEtablet;
         animation-name: ma5menuOutBIEtablet
@@ -429,14 +431,14 @@
     animation-name: ma5menuInIEphone
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1199px) {
     .ie.ma5menu--active.ma5menu--right .ma5menu__container {
         -webkit-animation-name:ma5menuInIEtablet;
         animation-name: ma5menuInIEtablet
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1199px) {
     .ma5menu--left .ma5menu__container {
         -webkit-transform:translate3d(-100%, 0, 0);
         transform: translate3d(-100%, 0, 0);
@@ -445,7 +447,7 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1199px) {
     .ma5menu--right .ma5menu__container {
         -webkit-transform:translate3d(100%, 0, 0);
         transform: translate3d(100%, 0, 0);
@@ -482,7 +484,7 @@
     scrollbar-width: thin
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1199px) {
     .ma5menu__panel {
         width:100%
     }
@@ -544,7 +546,7 @@
     animation-name: ma5-panelInIEphone
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1199px) {
     .ie .ma5menu__panel--active-enter {
         -webkit-animation-name:ma5-panelInIEtablet;
         animation-name: ma5-panelInIEtablet
@@ -572,7 +574,7 @@
     animation-name: ma5-panelOutIEphone
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1199px) {
     .ie .ma5menu__panel--active-leave {
         -webkit-animation-name:ma5-panelOutIEtablet;
         animation-name: ma5-panelOutIEtablet
@@ -600,7 +602,7 @@
     animation-name: ma5menuOutIEphone
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1199px) {
     .ie .ma5menu__panel--parent-enter {
         -webkit-animation-name:ma5menuOutIEtablet;
         animation-name: ma5menuOutIEtablet
@@ -628,7 +630,7 @@
     animation-name: ma5menuOutBIEphone
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1199px) {
     .ie .ma5menu__panel--parent-leave {
         -webkit-animation-name:ma5menuOutBIEtablet;
         animation-name: ma5menuOutBIEtablet
@@ -890,7 +892,7 @@
     pointer-events: none
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
     .ma5menu--active>body * {
         pointer-events:none
     }
@@ -963,7 +965,7 @@
     left: 100%
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1199px) {
     .ma5menu--swipe.ma5menu--active.ma5menu--left body {
         left:100%
     }
@@ -973,7 +975,7 @@
     right: 100%
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1199px) {
     .ma5menu--swipe.ma5menu--active.ma5menu--right body {
         right:100%
     }
@@ -1102,7 +1104,7 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1199px) {
     @-webkit-keyframes ma5-panelIn {
         0% {
             -webkit-transform:translate3d(100%, 0, 0)

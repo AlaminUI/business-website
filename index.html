@@ -60,7 +60,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-xl">
           <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="logo"></a>
           <button
              class="navbar-toggler ma5menu__toggle"
@@ -78,6 +78,9 @@
              <ul class="navbar-nav ml-auto align-items-center site-menu">
                 <li class="nav-item">
                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                   <a class="nav-link" href="#">About Us</a>
                 </li>
  
                 <li class="nav-item">
@@ -387,7 +390,7 @@
         </div>
       </div>
     </div>
-    <div class="row pt-5">
+    <div class="row p-mobile-0 pt-5">
       <div class="col-12 text-center">
         <a href="#" class="big-btn">GET YOUR FREE DIGITAL MARKETING AUDIT</a>
       </div>
@@ -829,7 +832,7 @@
 
 <footer class="page-footer   footer-color text-white" >
 
-  <div style="background-color: #6c45e7;">
+  <div style="background-color: #299ffe;">
     <div class="container">
 
       <!-- Grid row-->
@@ -881,7 +884,7 @@
     <div class="row mt-3">
 
       <!-- Grid column -->
-      <div class="col-md-3 col-lg-3 col-xl-4 mx-auto mb-4">
+      <div class="col-md-6 col-lg-3 col-xl-4 mx-auto mb-4">
 
         <!-- Content -->
         <img src="assets/img/logo.png" alt="logo" width="180" class="footer-logo">
@@ -894,7 +897,7 @@
       <!-- Grid column -->
 
       <!-- Grid column -->
-      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+      <div class="col-md-6 col-lg-4 col-xl-3 mx-auto mb-4">
 
         <!-- Links -->
         <h6 class="text-uppercase font-weight-bold text-white">Services</h6>
@@ -910,7 +913,7 @@
       <!-- Grid column -->
 
       <!-- Grid column -->
-      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+      <div class="col-md-6 col-lg-2 col-xl-2 mx-auto mb-4">
 
         <!-- Links -->
         <h6 class="text-uppercase font-weight-bold text-white">Useful links</h6>
@@ -926,7 +929,7 @@
       <!-- Grid column -->
 
       <!-- Grid column -->
-      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+      <div class="col-md-6 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
 
         <!-- Links -->
         <h6 class="text-uppercase font-weight-bold text-white">Contact</h6>
@@ -1029,7 +1032,32 @@ $('.testimonial-slide').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   centerPadding: '40px',
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 575,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
  
+  ]
 })
 
   </script>

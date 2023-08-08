@@ -291,6 +291,7 @@ a.big-btn {
   border: 2px solid #2b7ffe;
   font-weight: 600;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
 
 a.big-btn:hover {/* opacity: 0.9; */background: #299ffe;border-color: #299ffe;}

@@ -7,26 +7,108 @@
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (max-width: 992px){ 
+@media (max-width: 1199px){ 
     .navbar-nav {
         display: none;
     }
 }
 
 /* Medium devices (tablets, 768px and up) */
+@media (min-width: 992px) and (max-width: 1199px) { 
+
+    h1 {
+        font-size:50px;
+    }
+    
+    .banner-text p {
+        font-size: 22px !important;
+    }
+    .business-goal-card {
+        height: 100%;
+    }
+}
+/* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) { 
 
- 
+    .services-wrap {
+        grid-template-columns: 1fr 1fr;
+    }
+    .banner-text p {
+        font-size: 20px !important;
+  
+    }    
 }
 
 /* Extra small devices (portrait phones, less than 768px) */
 @media (max-width: 767.98px) { 
- 
+    .services-wrap {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    a.big-btn {
+        font-size: 15px;
+        line-height: 1.4;
+    
+    }
+    
+    h1 {
+        font-size: 40px;
+    }
+    
+    .banner-text p {
+        font-size: 16px !important;
+    }
+    
+    h2 {
+        font-size: 28px;
+    }
+    
+    .map {
+        margin-top: 24px;
+    }
+    
+    .business-goal-card {
+        max-width: 400px;
+        margin: 0 auto;
+        margin-bottom: 32px;
+    }
+    
+    .services-wrap {
+        display: block;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .brand-wrap {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    
+    .contact-form {
+        margin-top: 32px;
+    }
+    
+    hr.footer-hr {
+        margin: 0 auto;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+    .service-title {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .p-mobile-0 {
+        padding: 0 !important;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 320px) and (max-width: 400.98px) { 
- 
+    a.big-btn {
+        font-size: 16px;
+        line-height: 1.4;
+        max-width: 320px;
+    }
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 320px) and (max-width: 575.98px) { 
